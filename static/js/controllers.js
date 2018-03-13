@@ -28,6 +28,8 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
             data = $scope.zip3m;
         } else if(which === 4) {
             data = $scope.zip4m;
+        } else if(which === 5) {
+            data = $scope.zip5m;
         } 
 
         if(data.length === 5) {
@@ -47,6 +49,9 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                 } else if(which === 4) {
                     $scope.zip4City = response.data.city;
                     $scope.zip4Weather = response.data.weather;
+                } else if(which === 5) {
+                    $scope.zip5City = response.data.city;
+                    $scope.zip5Weather = response.data.weather;
                 } 
             });
         } else {
