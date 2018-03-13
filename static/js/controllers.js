@@ -67,6 +67,9 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                 } else if(which === 4) {
                     $scope.zip4City = "";
                     $scope.zip4Weather = "";
+                } else if(which === 5) {
+                    $scope.zip5City = "";
+                    $scope.zip5Weather = "";
                 } 
         }
     };
